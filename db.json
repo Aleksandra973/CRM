@@ -1,0 +1,438 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "name": "The Godfather",
+      "director": "Francis Ford Coppola",
+      "rating": 9.1
+    },
+    {
+      "id": 2,
+      "name": "Casablanca",
+      "director": "Michael Curtiz",
+      "rating": 8.8
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Casablanca",
+      "role": "client",
+      "email": "admin@ya.ru",
+      "image": "https://i.pinimg.com/originals/16/4e/99/164e99764442dcaf86fde0ab127991fc.jpg",
+      "age": 27,
+      "sex": 1,
+      "dateOfBirth": "19.20.1872"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "number": "0001-01",
+      "moments": "2020-06-01 08:15:24",
+      "status": "created",
+      "planEta": {
+        "plan": "2020-06-01 08:55:24",
+        "eta": "2020-06-01 09:10:32"
+      },
+      "packer": {
+        "id": 1,
+        "name": "Oleg",
+        "phone": "+79238293826",
+        "status": "packing"
+      },
+      "courier": {
+        "id": 1,
+        "name": "Jentos",
+        "phone": "+79238403826",
+        "status": "not found"
+      },
+      "deliveryAddress": "Измайловский проезд, 15, Москва, кв 289",
+      "client": {
+        "id": 1,
+        "name": "Иваныч",
+        "phone": "+79238290246"
+      },
+      "orderInfo": {
+        "pos": 12,
+        "weight": "34"
+      },
+      "totalPrice": "3246.93"
+    },
+    {
+      "id": 2,
+      "number": "0002-01",
+      "moments": "2020-07-01 12:24:24",
+      "status": "confirmed",
+      "planEta": {
+        "plan": "2020-06-01 17:42:24",
+        "eta": "2020-06-01 17:41:32"
+      },
+      "packer": {
+        "id": 2,
+        "name": "Simpa",
+        "phone": "+79232296827",
+        "status": "packing"
+      },
+      "courier": {
+        "id": 2,
+        "name": "Gosha",
+        "phone": "+79233405896",
+        "status": "created"
+      },
+      "deliveryAddress": "Россия, Респ. Татарстан, г. Казань, ул. Спартаковская, д. 2 корп. 1, кв. 13",
+      "client": {
+        "id": 2,
+        "name": "Светлана",
+        "phone": "+79238290246"
+      },
+      "orderInfo": {
+        "pos": 7,
+        "weight": "3"
+      },
+      "totalPrice": "1200.45"
+    },
+    {
+      "id": 3,
+      "number": "0003-02",
+      "moments": "2020-07-01 15:40:42",
+      "status": "confirmed",
+      "planEta": {
+        "plan": "2020-06-01 19:15:24",
+        "eta": "2020-06-01 19:19:39"
+      },
+      "packer": {
+        "id": 2,
+        "name": "Los",
+        "phone": "+79232296827",
+        "status": "packed"
+      },
+      "courier": {
+        "id": 2,
+        "name": "Devid",
+        "phone": "+79233405896",
+        "status": "assigned"
+      },
+      "deliveryAddress": "Московская обл., г. Одинцовский р-он, ул. д. Вырубово, д. 160, стр. 1, кв. 462",
+      "client": {
+        "id": 2,
+        "name": "Mike",
+        "phone": "+79238297928"
+      },
+      "orderInfo": {
+        "pos": 14,
+        "weight": "7"
+      },
+      "totalPrice": "1800.85"
+    }
+  ],
+  "orderInfo": [
+    {
+      "id": 1,
+      "info": {
+        "createdAt": "2020-05-30 19:32",
+        "status": "delivering",
+        "timeLeft": "01:44",
+        "planedTime": "2020-06-01 17:23:32",
+        "eta": "2020-06-01 17:45:32",
+        "cartCompletedItems": 15,
+        "cartTotalItems": 45,
+        "cartLeftToCollect": 25,
+        "history": [
+          {
+            "status": "new",
+            "time": "2020-06-01 13:22:32"
+          },
+          {
+            "status": "confirmed",
+            "time": "2020-06-01 13:23:32"
+          },
+          {
+            "status": "packing",
+            "time": "2020-06-01 13:24:32"
+          },
+          {
+            "status": "delivering",
+            "time": "2020-06-01 13:25:32"
+          },
+          {
+            "status": "arrived"
+          },
+          {
+            "status": "done"
+          }
+        ],
+        "cartInfo": {
+          "productsPrice": 1000.00,
+          "deliveryPrice": 300,
+          "discount": 200,
+          "totalSum": 1100,
+          "totalWithReplacements": 900,
+          "paidAtCheckout": 850
+        },
+        "clientInfo": {
+          "client": {
+            "name": "Кирилл",
+            "phone": "+79995555555"
+          },
+          "receiver": {
+            "name": "Татьяна",
+            "phone": "+79165258181"
+          }
+        },
+        "address": "Москва, Островитянова, 34 корпус 2, кв 506, подъезд 3, этаж 11, домофон 506",
+        "comment": "Мягкий хлеб"
+      },
+      "cart": {
+        "products": [
+          {
+            "name": "Хлеб белый",
+            "qty": 2,
+            "price": 100
+          },
+          {
+            "name": "Молоко топленое",
+            "qty": 1,
+            "price": 120
+          },
+          {
+            "name": "Говяжья вырезка",
+            "qty": 1.120,
+            "price": 600
+          },
+          {
+            "name": "Бананы",
+            "qty": 2.9,
+            "price": 50
+          },
+          {
+            "name": "Кетчуп Heinz",
+            "qty": 1,
+            "price": 150
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "info": {
+        "createdAt": "2020-06-05 14:18",
+        "status": "confirmed",
+        "timeLeft": "05:20",
+        "planedTime": "2020-06-06 12:30:32",
+        "eta": "2020-06-06 12:17:32",
+        "cartCompletedItems": 20,
+        "cartTotalItems": 40,
+        "cartLeftToCollect": 18,
+        "history": [
+          {
+            "status": "new",
+            "time": "2020-06-06 12:20:32"
+          },
+          {
+            "status": "confirmed",
+            "time": "2020-06-06 12:17:32"
+          },
+          {
+            "status": "packing"
+          },
+          {
+            "status": "delivering"
+          },
+          {
+            "status": "arrived"
+          },
+          {
+            "status": "done"
+          }
+        ],
+        "cartInfo": {
+          "productsPrice": 1000.00,
+          "deliveryPrice": 300,
+          "discount": 200,
+          "totalSum": 1100,
+          "totalWithReplacements": 900,
+          "paidAtCheckout": 850
+        },
+        "clientInfo": {
+          "client": {
+            "name": "Петрович",
+            "phone": "+79128355835"
+          },
+          "receiver": {
+            "name": "Петрович",
+            "phone": "+79128355835"
+          }
+        },
+        "address": "Москва, переклок Хачетуряна, 12 , кв 46, подъезд 2, этаж 3, домофон 186",
+        "comment": "Спит ребенок, в звонок не звонить!"
+      },
+      "cart": {
+        "products": [
+          {
+            "name": "Путинка",
+            "qty": 1,
+            "price": 150
+          },
+          {
+            "name": "Пельмени Мяснов",
+            "qty": 1,
+            "price": 500
+          },
+          {
+            "name": "Йогурт активия",
+            "qty": 2,
+            "price": 70
+          },
+          {
+            "name": "Огурцы турецкие",
+            "qty": 1.43,
+            "price": 39
+          },
+          {
+            "name": "Майонез провансаль",
+            "qty": 1,
+            "price": 131
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "info": {
+        "createdAt": "2020-06-07 08:17",
+        "status": "arrived",
+        "timeLeft": "29:16",
+        "planedTime": "2020-06-07 16:37:32",
+        "eta": "2020-06-07 16:38:00",
+        "cartCompletedItems": 30,
+        "cartTotalItems": 50,
+        "cartLeftToCollect": 39,
+        "history": [
+          {
+            "status": "new",
+            "time": "2020-06-07 08:22:32"
+          },
+          {
+            "status": "confirmed",
+            "time": "2020-06-07 08:25:32"
+          },
+          {
+            "status": "packing",
+            "time": "2020-06-07 15:29:32"
+          },
+          {
+            "status": "delivering",
+            "time": "2020-06-07 16:20:32"
+          },
+          {
+            "status": "arrived",
+            "time": "2020-06-07 16:30:32"
+          },
+          {
+            "status": "done"
+          }
+        ],
+        "cartInfo": {
+          "productsPrice": 7000.00,
+          "deliveryPrice": 300,
+          "discount": 620,
+          "totalSum": 7300,
+          "totalWithReplacements": 6800,
+          "paidAtCheckout": 6735
+        },
+        "clientInfo": {
+          "client": {
+            "name": "Иван",
+            "phone": "+79275555555"
+          },
+          "receiver": {
+            "name": "Мэри",
+            "phone": "+79185258181"
+          }
+        },
+        "address": "Москва, улица большая никитенская, 16 корпус 6, кв 36, подъезд 1, этаж 9, домофон 506",
+        "comment": ""
+      },
+      "cart": {
+        "products": [
+          {
+            "name": "Курица",
+            "qty": 7,
+            "price": 113
+          },
+          {
+            "name": "Молоко сгущенное",
+            "qty": 1,
+            "price": 120
+          },
+          {
+            "name": "Свинина",
+            "qty": 1.120,
+            "price": 600
+          },
+          {
+            "name": "Яблоки",
+            "qty": 2.9,
+            "price": 50
+          },
+          {
+            "name": "Рис",
+            "qty": 1,
+            "price": 150
+          },
+          {
+            "name": "Ананасы",
+            "qty": 1,
+            "price": 230
+          }
+        ]
+      }
+    }
+  ],
+  "chats": [
+    {
+      "id": 1,
+      "orderNumber": "00342425",
+      "messages": [
+        {
+          "client": "Иванов Иван Иванович",
+          "text": "Добрый день! Подскажите когда будет моя доставка товара?",
+          "moment": "2020-06-22 11:37:24"
+        },
+        {
+          "operator": "Олег Олегович",
+          "text": "Добрый день! Сейчас подскажем",
+          "moment": "2020-06-22 11:37:30"
+        },
+        {
+          "operator": "Олег Олегович",
+          "text": "Приносим свои извенения, доставка будет в течении часа. Хорошего вам дня.",
+          "moment": "2020-06-22 11:37:47"
+        }
+      ],
+      "status": "new"
+    },
+    {
+      "id": 2,
+      "orderNumber": "00342426",
+      "messages": [],
+      "status": "new"
+    },
+    {
+      "id": 3,
+      "orderNumber": "00342427",
+      "messages": []
+    },
+    {
+      "id": 4,
+      "orderNumber": "00342428",
+      "messages": []
+    },
+    {
+      "id": 5,
+      "orderNumber": "00342429",
+      "messages": []
+    }
+  ]
+}
